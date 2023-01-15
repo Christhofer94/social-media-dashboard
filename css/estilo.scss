@@ -28,36 +28,56 @@
         text-align: center;
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
-        & .main-media__fb {
-            background-color: hsl(225, 100%, 98%);
+        & .main-media__disp{
+             background-color: hsl(225, 100%, 98%);
             width: 80%;
-            border-top: 5px solid hsl(208, 92%, 53%);
             border-radius: 6px;
             align-items: center;
-            & .main-media__fb--logo {
+            
+            & .main-media__logo {
                 display: flex;
                 justify-content: center;
-                padding: 10px;
+                padding: 10px 0px;
+                margin-top:20px !important;
                 & .logo__img {
                     width: 20px;
                     height: 20px;
                     margin-right: 20px;
                 }
                 & .logo__text {
-                    font-weight: 400;
+                    font-weight: 600;
                 }
             }
-            & .number__num{
-                font-size: 50px;
+            & .main-meida__number--num{
+                font-size: 60px;
                 font-weight: 600;
-                margin: 0;
-            } 
-            & .number__text{
-                margin: 0;
-                
+                margin-bottom: 0;
+            }
+        }
+        & .main-meida__number--num--txt{
+            letter-spacing: .3rem;
+            color: hsl(228, 12%, 44%);
+        }
+        & .main-media__update{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+            & .update--icon{
+                height: 6px;
+                margin-bottom: 16px;
+                margin-right: 10px;
             }
         }
     }
+}
+
+
+ .border--gradient{
+    width: 100%;
+    height: 5px;
+    background:linear-gradient(to right,hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    border-radius: 6px;
 }
 
 .switch {

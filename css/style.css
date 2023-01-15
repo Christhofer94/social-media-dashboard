@@ -26,33 +26,51 @@
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
 }
-.container-fluid .main-media .main-media__fb {
+.container-fluid .main-media .main-media__disp {
   background-color: hsl(225deg, 100%, 98%);
   width: 80%;
-  border-top: 5px solid hsl(208deg, 92%, 53%);
   border-radius: 6px;
   align-items: center;
 }
-.container-fluid .main-media .main-media__fb .main-media__fb--logo {
+.container-fluid .main-media .main-media__disp .main-media__logo {
   display: flex;
   justify-content: center;
-  padding: 10px;
+  padding: 10px 0px;
+  margin-top: 20px !important;
 }
-.container-fluid .main-media .main-media__fb .main-media__fb--logo .logo__img {
+.container-fluid .main-media .main-media__disp .main-media__logo .logo__img {
   width: 20px;
   height: 20px;
   margin-right: 20px;
 }
-.container-fluid .main-media .main-media__fb .main-media__fb--logo .logo__text {
-  font-weight: 400;
-}
-.container-fluid .main-media .main-media__fb .number__num {
-  font-size: 50px;
+.container-fluid .main-media .main-media__disp .main-media__logo .logo__text {
   font-weight: 600;
-  margin: 0;
 }
-.container-fluid .main-media .main-media__fb .number__text {
-  margin: 0;
+.container-fluid .main-media .main-media__disp .main-meida__number--num {
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.container-fluid .main-media .main-meida__number--num--txt {
+  letter-spacing: 0.3rem;
+  color: hsl(228deg, 12%, 44%);
+}
+.container-fluid .main-media .main-media__update {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-fluid .main-media .main-media__update .update--icon {
+  height: 6px;
+  margin-bottom: 16px;
+  margin-right: 10px;
+}
+
+.border--gradient {
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, hsl(37deg, 97%, 70%), hsl(329deg, 70%, 58%));
+  border-radius: 6px;
 }
 
 .switch {
