@@ -6,6 +6,7 @@ body .container-fluid {
   width: 80% !important;
 }
 body .container-fluid .main-media {
+  margin-top: -100px;
   margin-right: auto;
   text-align: center;
   display: grid;
@@ -14,6 +15,7 @@ body .container-fluid .main-media {
 body .container-fluid .main-media .main-media__disp {
   background-color: hsl(225deg, 100%, 98%);
   width: 80%;
+  margin: auto;
   border-radius: 6px;
   align-items: center;
 }
@@ -53,9 +55,11 @@ body .container-fluid .main-media .main-media__update .update--icon {
 }
 body .container-header {
   width: 80%;
+  height: 250px;
   margin: 0 auto;
   padding: 20px;
   display: grid;
+  background-color: hsl(225deg, 100%, 98%);
   grid-template-columns: repeat(2, 1fr);
 }
 body .container-header .title-name {
@@ -65,7 +69,6 @@ body .container-header .title-name {
 body .container-header .switch__container {
   display: flex;
   justify-content: end;
-  align-items: center;
   width: 90%;
 }
 body .container-header .switch__container .switch__container--p {
@@ -94,6 +97,7 @@ body .main-today {
 body .main-today__cards {
   background-color: hsl(225deg, 100%, 98%);
   border-radius: 8px;
+  margin: auto;
   width: 80%;
 }
 body .main-today__cards .main-today__cards--logo {
@@ -144,7 +148,7 @@ body .footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: hsl(225deg, 100%, 98%);
+  background-color: hsl(227deg, 47%, 96%);
   width: 80%;
   height: 5%;
 }
@@ -164,6 +168,7 @@ body.dark .container-fluid .main-media {
 body.dark .container-fluid .main-media .main-media__disp {
   background-color: hsl(232deg, 19%, 15%);
   width: 80%;
+  margin: 20px auto;
   border-radius: 6px;
   align-items: center;
 }
@@ -207,6 +212,7 @@ body.dark .container-header {
   margin: 0 auto;
   padding: 20px;
   display: grid;
+  background-color: hsl(232deg, 19%, 15%);
   grid-template-columns: repeat(2, 1fr);
 }
 body.dark .container-header .title-name {
@@ -219,7 +225,6 @@ body.dark .container-header .title-name .title-name__h4 {
 body.dark .container-header .switch__container {
   display: flex;
   justify-content: end;
-  align-items: center;
   width: 90%;
 }
 body.dark .container-header .switch__container .switch__container--p {
@@ -292,6 +297,15 @@ body.dark .main-today__cards .main-today__cards--num .main-today__review .main-t
   height: 6px;
   margin-bottom: 16px;
   margin-right: 5px;
+}
+body.dark .footer {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(232deg, 19%, 15%);
+  width: 80%;
+  height: 5%;
 }
 
 .switch {
@@ -406,10 +420,11 @@ body.dark .main-today__cards .main-today__cards--num .main-today__review .main-t
     margin-right: 10px;
   }
   body .container-header {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
     display: grid;
+    background-color: hsl(225deg, 100%, 98%);
     grid-template-columns: repeat(2, 1fr);
   }
   body .container-header .title-name {
@@ -419,7 +434,6 @@ body.dark .main-today__cards .main-today__cards--num .main-today__review .main-t
   body .container-header .switch__container {
     display: flex;
     justify-content: end;
-    align-items: center;
     width: 90%;
   }
   body .container-header .switch__container .switch__container--p {
@@ -558,10 +572,11 @@ body.dark .main-today__cards .main-today__cards--num .main-today__review .main-t
     margin-right: 10px;
   }
   body.dark .container-header {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
     display: grid;
+    background-color: hsl(232deg, 19%, 15%);
     grid-template-columns: repeat(2, 1fr);
   }
   body.dark .container-header .title-name {
@@ -574,7 +589,6 @@ body.dark .main-today__cards .main-today__cards--num .main-today__review .main-t
   body.dark .container-header .switch__container {
     display: flex;
     justify-content: end;
-    align-items: center;
     width: 90%;
   }
   body.dark .container-header .switch__container .switch__container--p {
@@ -651,7 +665,16 @@ body.dark .main-today__cards .main-today__cards--num .main-today__review .main-t
     margin-right: 5px;
   }
   .switch--shadow:checked + label:after {
-    transform: translateX(16px);
+    transform: translateX(29px);
+  }
+  .footer {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(232deg, 19%, 15%);
+    width: 80%;
+    height: 5%;
   }
 }
 

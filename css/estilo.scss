@@ -4,6 +4,7 @@ body {
     & .container-fluid {
         width: 80% !important;
         & .main-media {
+            margin-top: -100px;
             margin-right: auto;
             text-align: center;
             display: grid;
@@ -12,6 +13,7 @@ body {
             & .main-media__disp {
                 background-color: hsl(225, 100%, 98%);
                 width: 80%;
+                margin: auto;
                 border-radius: 6px;
                 align-items: center;
 
@@ -55,9 +57,11 @@ body {
     }
     .container-header {
         width: 80%;
+        height: 250px;
         margin: 0 auto;
         padding: 20px;
         display: grid;
+        background-color: hsl(225, 100%, 98%);
         grid-template-columns: repeat(2, 1fr);
         & .title-name {
             justify-content: flex-end;
@@ -67,7 +71,6 @@ body {
         & .switch__container {
             display: flex;
             justify-content: end;
-            align-items: center;
             width: 90%;
             & .switch__container--p {
                 margin: 0;
@@ -101,7 +104,7 @@ body {
         background-color: hsl(225, 100%, 98%);
         // padding: 20px;
         border-radius: 8px;
-        // height: 70%;
+        margin: auto;
         width: 80%;
         & .main-today__cards--logo {
             display: flex;
@@ -153,8 +156,9 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: hsl(225, 100%, 98%);
+        background-color: hsl(227, 47%, 96%);
         width: 80%;
+
         height: 5%;
     }
 }
@@ -171,6 +175,7 @@ body.dark {
             & .main-media__disp {
                 background-color: hsl(232, 19%, 15%);
                 width: 80%;
+                margin: 20px auto;
                 border-radius: 6px;
                 align-items: center;
 
@@ -218,6 +223,7 @@ body.dark {
         margin: 0 auto;
         padding: 20px;
         display: grid;
+        background-color: hsl(232, 19%, 15%);
         grid-template-columns: repeat(2, 1fr);
         & .title-name {
             justify-content: flex-end;
@@ -230,7 +236,7 @@ body.dark {
         & .switch__container {
             display: flex;
             justify-content: end;
-            align-items: center;
+           
             width: 90%;
             & .switch__container--p {
                 margin: 0;
@@ -310,6 +316,15 @@ body.dark {
                 }
             }
         }
+    }
+    & .footer {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: hsl(232, 19%, 15%);
+        width: 80%;
+        height: 5%;
     }
 }
 
@@ -420,10 +435,11 @@ body.dark {
             }
         }
         .container-header {
-            width: 80%;
+            width: 100%;
             margin: 0 auto;
             padding: 20px;
             display: grid;
+            background-color: hsl(225, 100%, 98%);
             grid-template-columns: repeat(2, 1fr);
             & .title-name {
                 justify-content: flex-end;
@@ -433,7 +449,6 @@ body.dark {
             & .switch__container {
                 display: flex;
                 justify-content: end;
-                align-items: center;
                 width: 90%;
                 & .switch__container--p {
                     margin: 0;
@@ -581,10 +596,11 @@ body.dark {
             }
         }
         .container-header {
-            width: 80%;
+            width: 100%;
             margin: 0 auto;
             padding: 20px;
             display: grid;
+            background-color: hsl(232, 19%, 15%);
             grid-template-columns: repeat(2, 1fr);
             & .title-name {
                 justify-content: flex-end;
@@ -597,7 +613,7 @@ body.dark {
             & .switch__container {
                 display: flex;
                 justify-content: end;
-                align-items: center;
+            
                 width: 90%;
                 & .switch__container--p {
                     margin: 0;
@@ -679,6 +695,15 @@ body.dark {
         }
     }
     .switch--shadow:checked + label:after {
-        transform: translateX(16px);
+        transform: translateX(29px);
+    }
+    .footer {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: hsl(232, 19%, 15%);
+        width: 80%;
+        height: 5%;
     }
 }
