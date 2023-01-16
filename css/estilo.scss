@@ -194,3 +194,123 @@
 .switch--shadow:checked + label:after {
     transform: translateX(29px);
 }
+
+
+@media screen and (max-width: 480px) {
+    .container-header{
+        padding: 5px;
+        width: 100%;
+    }
+    .container-fluid {
+        width: 80% !important;
+        & .main-media {
+            margin-right: auto;
+            text-align: center;
+            display: grid;
+            grid-template-columns:100%;
+            
+            & .main-media__disp{
+                background-color: hsl(225, 100%, 98%);
+                width: 100%;
+                border-radius: 6px;
+                align-items: center;
+                
+                & .main-media__logo {
+                    display: flex;
+                    justify-content: center;
+                    padding: 10px 0px;
+                    margin-top:20px !important;
+                    & .logo__img {
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 20px;
+                    }
+                    & .logo__text {
+                        font-weight: 600;
+                        color: hsl(228, 12%, 44%);
+                    }
+                }
+                & .main-meida__number--num{
+                    font-size: 60px;
+                    font-weight: 600;
+                    margin-bottom: 0;
+                }
+            }
+            & .main-meida__number--num--txt{
+                letter-spacing: .3rem;
+                color: hsl(228, 12%, 44%);
+            }
+            & .main-media__update{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+               
+                & .update--icon{
+                    height: 6px;
+                    margin-bottom: 16px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    
+.main-today{
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 30px auto;
+}
+.main-today__cards{
+    background-color: hsl(225, 100%, 98%);
+    // padding: 20px;
+    border-radius: 8px;
+    // height: 70%;
+    width: 100%;
+    & .main-today__cards--logo{
+
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: space-around;
+        margin-top: 20px;
+        & .main-today__txt{
+            font-size: 14px;
+            font-weight: 600;
+            color: hsl(228, 12%, 44%);
+        }
+        & .main-today__icon{
+            width: 20px;
+            height: 20px;
+            margin-bottom: 16px;
+        }
+    }
+    & .main-today__cards--num{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 10px;
+
+        & .main-today__num{
+            color: #000;
+            font-size: 30px;
+            font-weight: 600;
+        }
+        & .main-today__review{
+            display: flex;
+            padding: 20px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            font-weight: 650;
+            & .main-today__icon{
+                width: 7px;
+                height: 6px;
+                margin-bottom: 16px;
+                margin-right: 5px;
+            }
+        }
+
+    }
+}
+    
+}

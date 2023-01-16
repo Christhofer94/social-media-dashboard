@@ -191,4 +191,113 @@
   transform: translateX(29px);
 }
 
+@media screen and (max-width: 480px) {
+  .container-header {
+    padding: 5px;
+    width: 100%;
+  }
+  .container-fluid {
+    width: 80% !important;
+  }
+  .container-fluid .main-media {
+    margin-right: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .container-fluid .main-media .main-media__disp {
+    background-color: hsl(225deg, 100%, 98%);
+    width: 100%;
+    border-radius: 6px;
+    align-items: center;
+  }
+  .container-fluid .main-media .main-media__disp .main-media__logo {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    margin-top: 20px !important;
+  }
+  .container-fluid .main-media .main-media__disp .main-media__logo .logo__img {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+  }
+  .container-fluid .main-media .main-media__disp .main-media__logo .logo__text {
+    font-weight: 600;
+    color: hsl(228deg, 12%, 44%);
+  }
+  .container-fluid .main-media .main-media__disp .main-meida__number--num {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  .container-fluid .main-media .main-meida__number--num--txt {
+    letter-spacing: 0.3rem;
+    color: hsl(228deg, 12%, 44%);
+  }
+  .container-fluid .main-media .main-media__update {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-fluid .main-media .main-media__update .update--icon {
+    height: 6px;
+    margin-bottom: 16px;
+    margin-right: 10px;
+  }
+  .main-today {
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 30px auto;
+  }
+  .main-today__cards {
+    background-color: hsl(225deg, 100%, 98%);
+    border-radius: 8px;
+    width: 100%;
+  }
+  .main-today__cards .main-today__cards--logo {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .main-today__cards .main-today__cards--logo .main-today__txt {
+    font-size: 14px;
+    font-weight: 600;
+    color: hsl(228deg, 12%, 44%);
+  }
+  .main-today__cards .main-today__cards--logo .main-today__icon {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 16px;
+  }
+  .main-today__cards .main-today__cards--num {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .main-today__cards .main-today__cards--num .main-today__num {
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .main-today__cards .main-today__cards--num .main-today__review {
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 650;
+  }
+  .main-today__cards .main-today__cards--num .main-today__review .main-today__icon {
+    width: 7px;
+    height: 6px;
+    margin-bottom: 16px;
+    margin-right: 5px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
