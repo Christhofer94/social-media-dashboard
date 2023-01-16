@@ -1,102 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
   <title>Frontend Mentor | Dashboard Social Media</title>
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
- 
+
 </head>
+
 <body>
   <header>
     <div class="container-header">
       <div class="title-name">
-          <h4 class="title-name__h4">Social Media Dashboard</h4>
-          <p>Total Followers: 23,004</p>
+        <h4 class="title-name__h4">Social Media Dashboard</h4>
+        <p class="title-name__h4">Total Followers: 23,004</p>
       </div>
       <div class="switch__container">
-        <p>Dark Mode </p>
+        <p class="switch__container--p">Dark Mode </p>
         <input id="switch-shadow" class="switch switch--shadow" type="checkbox" />
         <label for="switch-shadow"></label>
+      </div>
     </div>
-  </div>
   </header>
   <main class="container-fluid">
-      <div class="main-media">
-        <div class="main-media__disp" style="border-top: 5px solid hsl(208, 92%, 53%);">
-          <div class="main-media__logo">
-            <img class="logo__img" src="./images/icon-facebook.svg" alt="icon-facebook">
-            <p class="logo__text">@nathanf</p>
-          </div>
-          <div class="main-media__number">
-            <div class="main-media__number">
-              <p class="main-meida__number--num">1987</p>
-              <p class="main-meida__number--num--txt">FOLLOWERS</p>
-            </div>
-          </div>
-          <div class="main-media__update">
-            <img class="update--icon" src="./images/icon-up.svg" alt="up icon">
-            <p style="color: green; font-weight: 600;">12 today</p>
-          </div>
+    <div class="main-media">
+      <div class="main-media__disp" style="border-top: 5px solid hsl(208, 92%, 53%);">
+        <div class="main-media__logo">
+          <img class="logo__img" src="./images/icon-facebook.svg" alt="icon-facebook">
+          <p class="logo__text">@nathanf</p>
         </div>
-        <div class="main-media__disp" style="border-top: 5px solid hsl(203, 89%, 53%);">
-          <div class="main-media__logo">
-            <img class="logo__img" src="./images/icon-twitter.svg" alt="icon-twitter">
-            <p class="logo__text">@nathanf</p>
-          </div>
+        <div class="main-media__number">
           <div class="main-media__number">
-            <div class="main-media__number">
-              <p class="main-meida__number--num">1044</p>
-              <p class="main-meida__number--num--txt">FOLLOWERS</p>
-            </div>
-          </div>
-          <div class="main-media__update">
-            <img class="update--icon" src="./images/icon-up.svg" alt="up icon">
-            <p style="color: green; font-weight: 600;">99 today</p>
-          </div>
-        </div>
-        <div class="main-media__disp">
-          <div class="border--gradient"></div>
-          <div class="main-media__logo">
-            <img class="logo__img" src="./images/icon-instagram.svg" alt="icon-instagram">
-            <p class="logo__text">@nathanf</p>
-          </div>
-          <div class="main-media__number">
-            <p class="main-meida__number--num">11k</p>
+            <p class="main-meida__number--num">1987</p>
             <p class="main-meida__number--num--txt">FOLLOWERS</p>
           </div>
-          <div class="main-media__update">
-            <img class="update--icon" src="./images/icon-up.svg" alt="up icon">
-            <p style="color: green; font-weight: 600;">1099 today</p>
-          </div>
         </div>
-        <div class="main-media__disp" style="border-top: 5px solid hsl(348, 97%, 39%);">
-          <div class="main-media__logo">
-            <img class="logo__img" src="./images/icon-youtube.svg" alt="icon-youtube">
-            <p class="logo__text">Nathan F.</p>
-          </div>
+        <div class="main-media__update">
+          <img class="update--icon" src="./images/icon-up.svg" alt="up icon">
+          <p style="color: green; font-weight: 600;">12 today</p>
+        </div>
+      </div>
+      <div class="main-media__disp" style="border-top: 5px solid hsl(203, 89%, 53%);">
+        <div class="main-media__logo">
+          <img class="logo__img" src="./images/icon-twitter.svg" alt="icon-twitter">
+          <p class="logo__text">@nathanf</p>
+        </div>
+        <div class="main-media__number">
           <div class="main-media__number">
-            <div class="main-media__number">
-              <p class="main-meida__number--num">8239</p>
-              <p class="main-meida__number--num--txt">SUBSCRIBERS</p>
-            </div>
-          </div>
-          <div class="main-media__update">
-            <img class="update--icon" src="./images/icon-down.svg" alt="icon-down">
-            <p style="color: red; font-weight: 600;">144 today</p>
+            <p class="main-meida__number--num">1044</p>
+            <p class="main-meida__number--num--txt">FOLLOWERS</p>
           </div>
         </div>
+        <div class="main-media__update">
+          <img class="update--icon" src="./images/icon-up.svg" alt="up icon">
+          <p style="color: green; font-weight: 600;">99 today</p>
+        </div>
       </div>
-      <div class="main-today__title">
-        <h4 class="main-today__over">Overview - Today</h4>
+      <div class="main-media__disp">
+        <div class="border--gradient"></div>
+        <div class="main-media__logo">
+          <img class="logo__img" src="./images/icon-instagram.svg" alt="icon-instagram">
+          <p class="logo__text">@nathanf</p>
+        </div>
+        <div class="main-media__number">
+          <p class="main-meida__number--num">11k</p>
+          <p class="main-meida__number--num--txt">FOLLOWERS</p>
+        </div>
+        <div class="main-media__update">
+          <img class="update--icon" src="./images/icon-up.svg" alt="up icon">
+          <p style="color: green; font-weight: 600;">1099 today</p>
+        </div>
       </div>
-      <div class="main-today">
+      <div class="main-media__disp" style="border-top: 5px solid hsl(348, 97%, 39%);">
+        <div class="main-media__logo">
+          <img class="logo__img" src="./images/icon-youtube.svg" alt="icon-youtube">
+          <p class="logo__text">Nathan F.</p>
+        </div>
+        <div class="main-media__number">
+          <div class="main-media__number">
+            <p class="main-meida__number--num">8239</p>
+            <p class="main-meida__number--num--txt">SUBSCRIBERS</p>
+          </div>
+        </div>
+        <div class="main-media__update">
+          <img class="update--icon" src="./images/icon-down.svg" alt="icon-down">
+          <p style="color: red; font-weight: 600;">144 today</p>
+        </div>
+      </div>
+    </div>
+    <div class="main-today__title">
+      <h4 class="main-today__over">Overview - Today</h4>
+    </div>
+    <div class="main-today">
       <div class="main-today__cards">
         <div class="main-today__cards--logo">
           <p class="main-today__txt">Page Views</p>
@@ -105,35 +114,35 @@
         <div class="main-today__cards--num">
           <p class="main-today__num">87</p>
           <div class="main-today__review">
-          <img class="main-today__icon" src="./images/icon-up.svg" alt="icon-up">
-          <p style="color: green;">3%</p>
-        </div>
+            <img class="main-today__icon" src="./images/icon-up.svg" alt="icon-up">
+            <p style="color: green;">3%</p>
+          </div>
         </div>
       </div>
       <div class="main-today__cards">
         <div class="main-today__cards--logo">
           <p class="main-today__txt">Likes</p>
-          <img  class="main-today__icon" src="./images/icon-facebook.svg" alt="icon-facebook">
+          <img class="main-today__icon" src="./images/icon-facebook.svg" alt="icon-facebook">
         </div>
         <div class="main-today__cards--num">
           <p class="main-today__num">52</p>
           <div class="main-today__review">
-          <img class="main-today__icon" src="./images/icon-down.svg" alt="icon-up">
-          <p style="color: red;">2%</p>
-        </div>
+            <img class="main-today__icon" src="./images/icon-down.svg" alt="icon-up">
+            <p style="color: red;">2%</p>
+          </div>
         </div>
       </div>
       <div class="main-today__cards">
         <div class="main-today__cards--logo">
           <p class="main-today__txt">Likes</p>
-          <img  class="main-today__icon" src="./images/icon-instagram.svg" alt="icon-facebook">
+          <img class="main-today__icon" src="./images/icon-instagram.svg" alt="icon-facebook">
         </div>
         <div class="main-today__cards--num">
           <p class="main-today__num">5452</p>
           <div class="main-today__review">
-          <img class="main-today__icon" src="./images/icon-up.svg" alt="icon-up">
-          <p style="color: green;">2257%</p>
-        </div>
+            <img class="main-today__icon" src="./images/icon-up.svg" alt="icon-up">
+            <p style="color: green;">2257%</p>
+          </div>
         </div>
       </div>
       <div class="main-today__cards">
@@ -144,12 +153,12 @@
         <div class="main-today__cards--num">
           <p class="main-today__num">52k</p>
           <div class="main-today__review">
-          <img class="main-today__icon" src="./images/icon-up.svg" alt="icon-up">
-          <p style="color: green;">1375%</p>
-        </div>
+            <img class="main-today__icon" src="./images/icon-up.svg" alt="icon-up">
+            <p style="color: green;">1375%</p>
+          </div>
         </div>
       </div>
-    </div> 
+    </div>
     <div class="main-today">
       <div class="main-today__cards">
         <div class="main-today__cards--logo">
@@ -159,35 +168,35 @@
         <div class="main-today__cards--num">
           <p class="main-today__num">117</p>
           <div class="main-today__review">
-          <img class="main-today__icon" src="./images/icon-up.svg" alt="icon-up">
-          <p style="color: green;">303%</p>
-        </div>
+            <img class="main-today__icon" src="./images/icon-up.svg" alt="icon-up">
+            <p style="color: green;">303%</p>
+          </div>
         </div>
       </div>
       <div class="main-today__cards">
         <div class="main-today__cards--logo">
           <p class="main-today__txt">Likes</p>
-          <img  class="main-today__icon" src="./images/icon-twitter.svg" alt="icon-facebook">
+          <img class="main-today__icon" src="./images/icon-twitter.svg" alt="icon-facebook">
         </div>
         <div class="main-today__cards--num">
           <p class="main-today__num">507</p>
           <div class="main-today__review">
-          <img class="main-today__icon" src="./images/icon-up.svg" alt="icon-up">
-          <p style="color: green;">533%</p>
-        </div>
+            <img class="main-today__icon" src="./images/icon-up.svg" alt="icon-up">
+            <p style="color: green;">533%</p>
+          </div>
         </div>
       </div>
       <div class="main-today__cards">
         <div class="main-today__cards--logo">
           <p class="main-today__txt">Likes</p>
-          <img  class="main-today__icon" src="./images/icon-youtube.svg" alt="icon-facebook">
+          <img class="main-today__icon" src="./images/icon-youtube.svg" alt="icon-facebook">
         </div>
         <div class="main-today__cards--num">
           <p class="main-today__num">107</p>
           <div class="main-today__review">
-          <img class="main-today__icon" src="./images/icon-down.svg" alt="icon-up">
-          <p style="color: red;">19%</p>
-        </div>
+            <img class="main-today__icon" src="./images/icon-down.svg" alt="icon-up">
+            <p style="color: red;">19%</p>
+          </div>
         </div>
       </div>
       <div class="main-today__cards">
@@ -198,18 +207,24 @@
         <div class="main-today__cards--num">
           <p class="main-today__num">1407</p>
           <div class="main-today__review">
-          <img class="main-today__icon" src="./images/icon-down.svg" alt="icon-up">
-          <p class="main-today__text" style="color: red;">12%</p>
-        </div>
+            <img class="main-today__icon" src="./images/icon-down.svg" alt="icon-up">
+            <p class="main-today__text" style="color: red;">12%</p>
+          </div>
         </div>
       </div>
     </div>
   </main>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer class="footer">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.linkedin.com/in/christhofer-vieira-816124246">Christhofer Vieira</a>.
+    </div>
+  </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
